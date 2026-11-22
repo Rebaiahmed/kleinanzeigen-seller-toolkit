@@ -1,8 +1,8 @@
-# Kleinanzeigen Boost Seller Toolkit
+# Kleinanzeigen Seller Toolkit
 
 **Von AnzeigenBoost: kostenlose Kleinanzeigen Tipps und drei kleine Werkzeuge für private Verkäufer.** Schätze einen groben Preisbereich, formuliere eine Antwort und prüfe deine Anzeige vor dem Veröffentlichen. Ohne Konto, Backend, Tracking oder Datenabruf von Kleinanzeigen.
 
-**[Live-Demo öffnen](https://rebaiahmed.github.io/kleinanzeigen-boost-seller-toolkit/)** · [Quellcode ansehen](https://github.com/Rebaiahmed/kleinanzeigen-boost-seller-toolkit)
+**[Live-Demo öffnen](https://rebaiahmed.github.io/kleinanzeigen-seller-toolkit/)** · [Quellcode ansehen](https://github.com/Rebaiahmed/kleinanzeigen-seller-toolkit)
 
 > **Unabhängiges Community-Projekt:** Dieses Toolkit ist kein offizielles Angebot der Kleinanzeigen GmbH und steht in keiner Verbindung zu ihr.
 
@@ -54,7 +54,7 @@ npm run build
 
 ## GitHub Pages
 
-Der Workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) führt Tests und Build aus und veröffentlicht `dist/` nach einem Push auf `main`. Im Repository unter **Settings → Pages → Build and deployment** als Quelle **GitHub Actions** wählen. Danach ist die Demo unter `https://rebaiahmed.github.io/kleinanzeigen-boost-seller-toolkit/` erreichbar. Bei einem Fork musst du den Demo- und Canonical-Link sowie `VITE_BASE_PATH` (automatisch aus dem Repo-Namen) prüfen.
+Der Workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) führt Tests und Build aus und veröffentlicht `dist/` nach einem Push auf `main`. Im Repository unter **Settings → Pages → Build and deployment** als Quelle **GitHub Actions** wählen. Danach ist die Demo unter `https://rebaiahmed.github.io/kleinanzeigen-seller-toolkit/` erreichbar. Bei einem Fork musst du den Demo- und Canonical-Link sowie `VITE_BASE_PATH` (automatisch aus dem Repo-Namen) prüfen.
 
 ## Datenschutz und Grenzen
 
