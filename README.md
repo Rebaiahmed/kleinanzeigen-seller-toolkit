@@ -1,85 +1,60 @@
 # Kleinanzeigen Seller Toolkit
 
-**Von AnzeigenBoost: kostenlose Kleinanzeigen Tipps und drei kleine Werkzeuge für private Verkäufer.** Schätze einen groben Preisbereich, formuliere eine Antwort und prüfe deine Anzeige vor dem Veröffentlichen. Ohne Konto, Backend, Tracking oder Datenabruf von Kleinanzeigen.
+### Verkaufen auf Kleinanzeigen: weniger raten, klarer antworten, Anzeigen besser vorbereiten.
 
-**[Live-Demo öffnen](https://rebaiahmed.github.io/kleinanzeigen-seller-toolkit/)** · [Quellcode ansehen](https://github.com/Rebaiahmed/kleinanzeigen-seller-toolkit)
+**Kostenlose Werkzeuge von [AnzeigenBoost](https://anzeigenboost.de/)** · [Toolkit direkt öffnen](https://rebaiahmed.github.io/kleinanzeigen-seller-toolkit/) · [Chrome-Erweiterung ansehen](https://chromewebstore.google.com/detail/noagiapohlenpolcbeghlmngalapbobe)
 
-> **Unabhängiges Community-Projekt:** Dieses Toolkit ist kein offizielles Angebot der Kleinanzeigen GmbH und steht in keiner Verbindung zu ihr.
+> Unabhängiges Community-Projekt. Keine Verbindung zur Kleinanzeigen GmbH.
 
-## Ein Blick auf die Werkzeuge
+## Was AnzeigenBoost für Verkäufer interessant macht
 
-| Werkzeug | Wofür es hilft | Grenze |
-| --- | --- | --- |
-| **Kleinanzeigen Preisrechner** | Einen transparenten, groben Preisbereich aus Kaufpreis, Zustand und Alter ableiten | Keine echten Markt- oder Verkaufspreise |
-| **Kleinanzeigen Antwortvorlagen** | Acht höfliche deutsche Nachrichten bearbeiten und kopieren | Du prüfst Fakten und sendest selbst |
-| **Anzeigen-Checkliste** | Titel, Fotos, Zustand, Preis, Kategorie und Übergabe prüfen | Kein automatischer Qualitäts- oder Ranking-Check |
+**„Was verlangen andere für mein iPhone?“** Ähnliche Angebote vergleichen und den eigenen Preis einordnen.
 
-![Platzhalter für einen Screenshot der drei Werkzeuge](docs/screenshot-placeholder.svg)
+![Demonstration des AnzeigenBoost Preischecks mit vergleichbaren Angeboten](docs/images/preischeck-demo.png)
 
-*Bildplatzhalter: Nach der ersten GitHub-Pages-Veröffentlichung kann hier ein echter Screenshot der Oberfläche eingefügt werden. Eine kurze Anleitung steht in [docs/screenshots.md](docs/screenshots.md).*
+*Beispielansicht mit Testdaten. Die gezeigten Preise sind keine aktuellen Marktpreise oder Verkaufsergebnisse.*
 
-## Kleinanzeigen Preisrechner: So funktioniert die Schätzung
+**„Was sollte ich an meiner Anzeige verbessern?“** Verkaufschancen, Preis und fehlende Angaben im Blick behalten.
 
-Gib den ursprünglichen Kaufpreis, den Zustand und das Alter des Artikels ein. Optional kannst du deinen Wunschpreis mit der groben Spanne vergleichen. Die Rechnung ist offen einsehbar:
+![AnzeigenBoost Oberfläche mit Hinweisen zu Verkaufschancen und Anzeigen](docs/images/verkaufschancen-demo.jpg)
 
-`Kaufpreis × Zustandsfaktor × Altersfaktor`, anschließend `±15 %` um den Mittelwert.
+*Beispielansicht der Oberfläche; keine Aussage über tatsächliche Verkaufsergebnisse.*
 
-Die Faktoren stehen in [src/price.ts](src/price.ts) und können geändert werden. Das Ergebnis ist **eine illustrative Heuristik, keine Marktwertermittlung**. Das Toolkit ruft weder Kleinanzeigen noch eine andere Marktdatenquelle ab. Modell, Zubehör, Nachfrage, Region und tatsächlich erzielte Verkaufspreise bleiben unberücksichtigt. Vergleiche ähnliche Angebote selbst, bevor du deinen Preis festlegst.
+**„Schon wieder ,Geht noch was?‘“** KI-Antwortvorschläge helfen beim Formulieren. Du prüfst die Nachricht und entscheidest selbst, was du sendest.
 
-Ein Rechenbeispiel findest du unter [examples/preisbeispiel.md](examples/preisbeispiel.md).
+![Illustrative Geschichte zu Käufernachrichten und AnzeigenBoost KI Antworten](docs/images/ki-antwort-story.png)
 
-## Kleinanzeigen Antwortvorlagen: freundlich und konkret
+**„Ich wollte die Anzeige doch neu einstellen …“** Reposts lassen sich in AnzeigenBoost planen.
 
-Die Vorlagen decken „Was letzte Preis?“, niedrige Angebote, Festpreis, Gegenangebote, Versand, Abholung, Reservierungen und nicht erschienene Interessenten ab. Du kannst jeden Text im Browser ändern und anschließend mit einem Klick kopieren. Platzhalter wie `[TAG]` oder `[DEIN GEGENANGEBOT]` müssen vor dem Senden ersetzt werden. Der Versand-Entwurf behauptet bewusst nicht, dass du tatsächlich versendest.
+![Illustrative Geschichte zur Repost Planung mit AnzeigenBoost](docs/images/repost-story.png)
 
-## Kleinanzeigen Anzeige optimieren: sechs Punkte prüfen
+*Die beiden Bildgeschichten sind Illustrationen, keine Kundenberichte oder Aufnahmen einer echten Konversation.*
 
-Die interaktive Checkliste fragt nach einem verständlichen Titel, guten Fotos, ehrlichem Zustand, plausiblem Preis, passender Kategorie und klaren Angaben zur Übergabe. Dein Fortschritt liegt nur im lokalen Speicher deines Browsers. Der Reset-Knopf löscht ihn wieder.
+**Du möchtest Konkurrenzpreise vergleichen, Anzeigen optimieren oder Reposts planen? [Entdecke AnzeigenBoost.](https://anzeigenboost.de/)**
 
-## Lokal starten
+## Drei kostenlose Kleinanzeigen Tipps zum Ausprobieren
 
-Benötigt **Node.js 22.6 oder neuer** und npm.
+Das [Toolkit im Browser](https://rebaiahmed.github.io/kleinanzeigen-seller-toolkit/) funktioniert ohne Konto:
 
-```bash
-npm ci
-npm run dev
-```
+1. **Kleinanzeigen Preisrechner:** Kaufpreis, Zustand und Alter eingeben und eine grobe Spanne sehen. Eine offene Heuristik, **kein Marktwert** und keine Live-Daten.
+2. **Kleinanzeigen Antwortvorlagen:** Acht deutsche Antworten für Preisfragen, Versand, Abholung und mehr bearbeiten und kopieren.
+3. **Kleinanzeigen Anzeige optimieren:** Sechs Punkte für Titel, Fotos, Zustand, Preis, Kategorie und Übergabe abhaken.
 
-Öffne die angezeigte lokale Adresse. Für die automatischen Preisrechner-Tests und den Produktions-Build:
+<details>
+<summary>Für Entwickler: lokal starten, Heuristik und Datenschutz</summary>
 
-```bash
-npm test
-npm run build
-```
+Benötigt Node.js 22.6 oder neuer. Mit `npm ci` und `npm run dev` lokal öffnen. `npm test` prüft die Preisrechnung, `npm run build` erstellt die GitHub-Pages-Version. Der Workflow unter [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) veröffentlicht nach einem Push auf `main`.
 
-## GitHub Pages
+Der Preisrechner nutzt `Kaufpreis × Zustandsfaktor × Altersfaktor`, dann ±15 % um den Mittelwert. Die Faktoren stehen in [src/price.ts](src/price.ts); ein Beispiel steht unter [examples/preisbeispiel.md](examples/preisbeispiel.md). Modell, Zubehör, Nachfrage, Region und echte Verkaufspreise fließen nicht ein.
 
-Der Workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) führt Tests und Build aus und veröffentlicht `dist/` nach einem Push auf `main`. Im Repository unter **Settings → Pages → Build and deployment** als Quelle **GitHub Actions** wählen. Danach ist die Demo unter `https://rebaiahmed.github.io/kleinanzeigen-seller-toolkit/` erreichbar. Bei einem Fork musst du den Demo- und Canonical-Link sowie `VITE_BASE_PATH` (automatisch aus dem Repo-Namen) prüfen.
+Kein Backend, keine Konten, kein Tracking, kein Scraping und keine Kleinanzeigen-API. Nur der Checklisten-Fortschritt wird lokal im Browser gespeichert. Preisangaben und bearbeitete Antworten werden nicht übertragen. Details und Beiträge: [CONTRIBUTING.md](CONTRIBUTING.md) · [MIT-Lizenz](LICENSE).
 
-## Datenschutz und Grenzen
+</details>
 
-- Kein Backend, Benutzerkonto, Analytics-Skript, externer Font oder Tracking-Cookie.
-- Keine Scraping-Funktion und kein Aufruf einer Kleinanzeigen-API.
-- Der Rechner verarbeitet Eingaben im Browser. Die Checkliste nutzt nur `localStorage`; Antworttexte werden nicht gespeichert.
-- „Kopieren“ benutzt die Zwischenablage nur nach deinem Klick. Falls der Browser das verhindert, wird der Text markiert.
-- Externe Links führen zu GitHub und AnzeigenBoost erst nach einem Klick.
+## Häufige Fragen
 
-## FAQ: Kleinanzeigen Tipps
+**Ist der Preisrechner eine echte Marktanalyse?** Nein. Er zeigt nur eine illustrative Schätzung aus deinen Eingaben. Für Konkurrenzpreise nutze echte Vergleichsangebote.
 
-**Ist der Preisbereich ein echter Marktpreis?** Nein. Er entsteht ausschließlich aus den sichtbaren Faktoren in `src/price.ts`. Für eine realistische Preisentscheidung vergleiche Zustand, Modell, Zubehör und Region mit ähnlichen Angeboten.
+**Kann das Toolkit Antworten automatisch verschicken?** Nein. Du bearbeitest und kopierst eine Vorlage; das Senden bleibt bei dir.
 
-**Warum wird mein Artikel mit zunehmendem Alter günstiger geschätzt?** Das ist eine einfache Standardannahme. Manche Sammlerstücke und knappe Produkte verhalten sich anders; dafür ist dieser Rechner ungeeignet.
-
-**Kann ich die Antwortvorlagen direkt an Käufer senden?** Nein. Das Toolkit kopiert nur den bearbeiteten Text. Du entscheidest selbst, ob und wie du ihn sendest.
-
-**Werden meine Eingaben gespeichert?** Nur der Fortschritt der Checkliste bleibt lokal im Browser. Preise und bearbeitete Antworten werden nicht gespeichert oder übertragen.
-
-**Ist dieses Projekt von Kleinanzeigen?** Nein. Es ist ein unabhängiges Community-Projekt.
-
-## Über AnzeigenBoost
-
-Der Ersteller dieses Toolkits entwickelt auch [AnzeigenBoost](https://anzeigenboost.de/), eine separate [Chrome-Erweiterung](https://chromewebstore.google.com/detail/noagiapohlenpolcbeghlmngalapbobe) für Verkäufer. Du möchtest Konkurrenzpreise vergleichen, Anzeigen optimieren oder Reposts planen? Entdecke AnzeigenBoost. Manche Funktionen dort benötigen ein Konto und Credits; dieses Toolkit bleibt eigenständig und kostenlos.
-
-## Mitmachen
-
-Fehler, verständlichere Vorlagen und Verbesserungsideen sind willkommen. Bitte lies [CONTRIBUTING.md](CONTRIBUTING.md). Der Code steht unter der [MIT-Lizenz](LICENSE).
+**Gehört das Toolkit zu Kleinanzeigen?** Nein. Es ist ein unabhängiges Projekt des AnzeigenBoost-Entwicklers.
